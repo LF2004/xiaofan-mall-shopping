@@ -16,6 +16,7 @@
 1. **安装Node.js和npm**：  
    在本地计算机上安装Node.js和npm（Node Package Manager），这是运行和构建UniApp项目所必需的。
 > 使用pnpm指令安装依赖
+2. 项目运行H5：npm run dev:h5
 
 # 小帆购物使用说明与技术栈
 
