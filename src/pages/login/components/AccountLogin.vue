@@ -24,7 +24,6 @@
       </view>
       <view class="flex-col group_4">
         <view class="flex-col justify-start items-center button"><text class="font_2 text_7" @click="login()">登录</text></view>
-        <view class="flex-col justify-start items-center button" style="margin-top: 20px;background-color: #00df4c"><text class="font_2 text_7" @click="wxGzhLogin()">微信公众号登录</text></view>
         <view class="flex-row justify-between group_5">
           <text class="font_3 text_8">遇见问题</text>
           <text class="font_3">忘记密码</text>
@@ -36,7 +35,7 @@
   <uni-popup ref="popup" type="center" background-color="#fff" :mask-click="false">
     <view class="WxLoginPopup">
       <img src="https://www.z4a.net/images/2024/01/06/qrcode_for_gh_994d57b6897e_430.jpg" style="width: 200px;height: 200px">
-      <h1>扫描关注<span>小帆购物</span>公众号</h1>
+      <h1>扫描关注<span>乐初购物</span>公众号</h1>
       <p>回复<b>登录</b>即可登录</p>
     </view>
   </uni-popup>
@@ -135,8 +134,7 @@ const wxGzhLogin = async ()=>{
   margin-left: 5rpx;
 }
 .page {
-  background-color: #409efe;
-  background-image: linear-gradient(135deg, #409efe 0%, #61aefc 100%);
+  background-color: var(--xiaofan-bg-main-color);
   width: 100%;
   overflow-y: auto;
   overflow-x: hidden;
@@ -185,12 +183,12 @@ const wxGzhLogin = async ()=>{
         .text_3 {
           margin-right: 21rpx;
           margin-bottom: 3rpx;
-          color: #67aaee;
+          color: var(--xiaofan-bg-main-color);
         }
       }
       .section_3 {
         margin-right: 61rpx;
-        background-color: #0f71d499;
+        background-color: var(--xiaofan-bg-main-color);
         width: 62rpx;
         height: 3rpx;
       }
@@ -217,7 +215,7 @@ const wxGzhLogin = async ()=>{
       margin-top: 85rpx;
       .button {
         padding: 30rpx 0 24rpx;
-        background-color: #409EFE;
+        background-color: var(--xiaofan-bg-main-color);
         border-radius: 25px;
         width: 510rpx;
         .text_7 {
