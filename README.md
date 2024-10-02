@@ -1,6 +1,6 @@
 # 小帆购物
 
-### 后端地址：https://gitee.com/LiFan2004/xiaofan-shopping-service
+### 后端地址：https://gitee.com/LiFan2004/xiaofan-mall-shopping-backend
 ### 后台地址：https://gitee.com/LiFan2004/xiaofan-mall-shopping-background
 
 ## 介绍
