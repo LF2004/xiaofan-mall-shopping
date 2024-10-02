@@ -1,0 +1,43 @@
+// 修正后的 SCSS 代码
+
+body {
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+/*定义滚动条高宽及背景
+ 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar
+{
+  width:0;
+  height: 0;
+  background-color:rgba(255,255,255,.1);
+}
+
+
+/**
+
+--蓝色背景色主题
+--深背景色对应css变量名称: --xiaofan-bg-main-color
+--浅背景色对应css变量名称: --xiaofan-bg-unimportant-color
+--深文字颜色对应css变量名称: --xiaofan-bg-main-color-text
+--浅文字颜色对应css变量名称: --xiaofan-bg-unimportant-color-text
+深背景色: #0593f9
+浅背景色: #b2d0f2
+*/
+
+
+:root {
+  // 变量定义
+  --xiaofan-bg-main-color: #007aff;  // 背景主色深色
+  --xiaofan-bg-unimportant-color: #70a4f7;
+  --xiaofan-gradient-bg:linear-gradient(90deg, #004ef6, #0046dd);
+  --xiaofan-bg-main-color-hover: #0f7fec;
+  --xiaofan-bg-main-color-active: #0f7fec;
+  --xiaofan-bg-main-color-disabled: #9d9d9d;
+  --xiaofan-tabbar-color-selected: #0593f9;
+  --xiaofan-bg-main-color-text: #0593f9;
+  --xiaofan-remind-color-text: #979797de;
+  --xiaofan-bg-default-color-text: #ffffff;
+}

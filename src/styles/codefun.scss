@@ -1,0 +1,520 @@
+/************************************************************
+** 请将全局样式拷贝到项目的全局 CSS 文件或者当前页面的顶部 **
+** 否则页面将无法正常显示                                  **
+************************************************************/
+
+page {
+  width: 100vw;
+  height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+  'Droid Sans', 'Helvetica Neue', 'Microsoft Yahei', sans-serif;
+}
+
+view,
+image,
+text {
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.items-end {
+  align-items: flex-end;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-baseline {
+  align-items: baseline;
+}
+
+.items-stretch {
+  align-items: stretch;
+}
+
+.self-start {
+  align-self: flex-start;
+}
+
+.self-end {
+  align-self: flex-end;
+}
+
+.self-center {
+  align-self: center;
+}
+
+.self-baseline {
+  align-self: baseline;
+}
+
+.self-stretch {
+  align-self: stretch;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
+}
+
+.flex-auto {
+  flex: 1 1 auto;
+}
+
+.grow {
+  flex-grow: 1;
+}
+
+.grow-0 {
+  flex-grow: 0;
+}
+
+.shrink {
+  flex-shrink: 1;
+}
+
+.shrink-0 {
+  flex-shrink: 0;
+}
+
+.relative {
+  position: relative;
+}
+
+.ml-2 {
+  margin-left: 3.85rpx;
+}
+
+.mt-2 {
+  margin-top: 3.85rpx;
+}
+
+.ml-4 {
+  margin-left: 7.69rpx;
+}
+
+.mt-4 {
+  margin-top: 7.69rpx;
+}
+
+.ml-6 {
+  margin-left: 11.54rpx;
+}
+
+.mt-6 {
+  margin-top: 11.54rpx;
+}
+
+.ml-8 {
+  margin-left: 15.38rpx;
+}
+
+.mt-8 {
+  margin-top: 15.38rpx;
+}
+
+.ml-10 {
+  margin-left: 19.23rpx;
+}
+
+.mt-10 {
+  margin-top: 19.23rpx;
+}
+
+.ml-12 {
+  margin-left: 23.08rpx;
+}
+
+.mt-12 {
+  margin-top: 23.08rpx;
+}
+
+.ml-14 {
+  margin-left: 26.92rpx;
+}
+
+.mt-14 {
+  margin-top: 26.92rpx;
+}
+
+.ml-16 {
+  margin-left: 30.77rpx;
+}
+
+.mt-16 {
+  margin-top: 30.77rpx;
+}
+
+.ml-18 {
+  margin-left: 34.62rpx;
+}
+
+.mt-18 {
+  margin-top: 34.62rpx;
+}
+
+.ml-20 {
+  margin-left: 38.46rpx;
+}
+
+.mt-20 {
+  margin-top: 38.46rpx;
+}
+
+.ml-22 {
+  margin-left: 42.31rpx;
+}
+
+.mt-22 {
+  margin-top: 42.31rpx;
+}
+
+.ml-24 {
+  margin-left: 46.15rpx;
+}
+
+.mt-24 {
+  margin-top: 46.15rpx;
+}
+
+.ml-26 {
+  margin-left: 50rpx;
+}
+
+.mt-26 {
+  margin-top: 50rpx;
+}
+
+.ml-28 {
+  margin-left: 53.85rpx;
+}
+
+.mt-28 {
+  margin-top: 53.85rpx;
+}
+
+.ml-30 {
+  margin-left: 57.69rpx;
+}
+
+.mt-30 {
+  margin-top: 57.69rpx;
+}
+
+.ml-32 {
+  margin-left: 61.54rpx;
+}
+
+.mt-32 {
+  margin-top: 61.54rpx;
+}
+
+.ml-34 {
+  margin-left: 65.38rpx;
+}
+
+.mt-34 {
+  margin-top: 65.38rpx;
+}
+
+.ml-36 {
+  margin-left: 69.23rpx;
+}
+
+.mt-36 {
+  margin-top: 69.23rpx;
+}
+
+.ml-38 {
+  margin-left: 73.08rpx;
+}
+
+.mt-38 {
+  margin-top: 73.08rpx;
+}
+
+.ml-40 {
+  margin-left: 76.92rpx;
+}
+
+.mt-40 {
+  margin-top: 76.92rpx;
+}
+
+.ml-42 {
+  margin-left: 80.77rpx;
+}
+
+.mt-42 {
+  margin-top: 80.77rpx;
+}
+
+.ml-44 {
+  margin-left: 84.62rpx;
+}
+
+.mt-44 {
+  margin-top: 84.62rpx;
+}
+
+.ml-46 {
+  margin-left: 88.46rpx;
+}
+
+.mt-46 {
+  margin-top: 88.46rpx;
+}
+
+.ml-48 {
+  margin-left: 92.31rpx;
+}
+
+.mt-48 {
+  margin-top: 92.31rpx;
+}
+
+.ml-50 {
+  margin-left: 96.15rpx;
+}
+
+.mt-50 {
+  margin-top: 96.15rpx;
+}
+
+.ml-52 {
+  margin-left: 100rpx;
+}
+
+.mt-52 {
+  margin-top: 100rpx;
+}
+
+.ml-54 {
+  margin-left: 103.85rpx;
+}
+
+.mt-54 {
+  margin-top: 103.85rpx;
+}
+
+.ml-56 {
+  margin-left: 107.69rpx;
+}
+
+.mt-56 {
+  margin-top: 107.69rpx;
+}
+
+.ml-58 {
+  margin-left: 111.54rpx;
+}
+
+.mt-58 {
+  margin-top: 111.54rpx;
+}
+
+.ml-60 {
+  margin-left: 115.38rpx;
+}
+
+.mt-60 {
+  margin-top: 115.38rpx;
+}
+
+.ml-62 {
+  margin-left: 119.23rpx;
+}
+
+.mt-62 {
+  margin-top: 119.23rpx;
+}
+
+.ml-64 {
+  margin-left: 123.08rpx;
+}
+
+.mt-64 {
+  margin-top: 123.08rpx;
+}
+
+.ml-66 {
+  margin-left: 126.92rpx;
+}
+
+.mt-66 {
+  margin-top: 126.92rpx;
+}
+
+.ml-68 {
+  margin-left: 130.77rpx;
+}
+
+.mt-68 {
+  margin-top: 130.77rpx;
+}
+
+.ml-70 {
+  margin-left: 134.62rpx;
+}
+
+.mt-70 {
+  margin-top: 134.62rpx;
+}
+
+.ml-72 {
+  margin-left: 138.46rpx;
+}
+
+.mt-72 {
+  margin-top: 138.46rpx;
+}
+
+.ml-74 {
+  margin-left: 142.31rpx;
+}
+
+.mt-74 {
+  margin-top: 142.31rpx;
+}
+
+.ml-76 {
+  margin-left: 146.15rpx;
+}
+
+.mt-76 {
+  margin-top: 146.15rpx;
+}
+
+.ml-78 {
+  margin-left: 150rpx;
+}
+
+.mt-78 {
+  margin-top: 150rpx;
+}
+
+.ml-80 {
+  margin-left: 153.85rpx;
+}
+
+.mt-80 {
+  margin-top: 153.85rpx;
+}
+
+.ml-82 {
+  margin-left: 157.69rpx;
+}
+
+.mt-82 {
+  margin-top: 157.69rpx;
+}
+
+.ml-84 {
+  margin-left: 161.54rpx;
+}
+
+.mt-84 {
+  margin-top: 161.54rpx;
+}
+
+.ml-86 {
+  margin-left: 165.38rpx;
+}
+
+.mt-86 {
+  margin-top: 165.38rpx;
+}
+
+.ml-88 {
+  margin-left: 169.23rpx;
+}
+
+.mt-88 {
+  margin-top: 169.23rpx;
+}
+
+.ml-90 {
+  margin-left: 173.08rpx;
+}
+
+.mt-90 {
+  margin-top: 173.08rpx;
+}
+
+.ml-92 {
+  margin-left: 176.92rpx;
+}
+
+.mt-92 {
+  margin-top: 176.92rpx;
+}
+
+.ml-94 {
+  margin-left: 180.77rpx;
+}
+
+.mt-94 {
+  margin-top: 180.77rpx;
+}
+
+.ml-96 {
+  margin-left: 184.62rpx;
+}
+
+.mt-96 {
+  margin-top: 184.62rpx;
+}
+
+.ml-98 {
+  margin-left: 188.46rpx;
+}
+
+.mt-98 {
+  margin-top: 188.46rpx;
+}
+
+.ml-100 {
+  margin-left: 192.31rpx;
+}
+
+.mt-100 {
+  margin-top: 192.31rpx;
+}
