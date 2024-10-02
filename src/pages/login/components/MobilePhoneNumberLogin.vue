@@ -114,8 +114,7 @@ const EmailLogin = async ()=>{
   margin-top: 39rpx;
 }
 .page {
-  background-color: #409efe;
-  background-image: linear-gradient(135deg, #409efe 0%, #61aefc 100%);
+  background-color: var(--xiaofan-bg-main-color);
   width: 100%;
   overflow-y: auto;
   overflow-x: hidden;
@@ -158,7 +157,7 @@ const EmailLogin = async ()=>{
 .group_2 {
   padding-bottom: 4rpx;
 .text_4 {
-  color: #67aaee;
+  color: var(--xiaofan-bg-main-color);
   line-height: 35rpx;
 }
 .text_3 {
@@ -168,7 +167,7 @@ const EmailLogin = async ()=>{
 }
 }
 .section_3 {
-  background-color: #0f71d499;
+  background-color: var(--xiaofan-bg-main-color);
   width: 173rpx;
   height: 3rpx;
 }
@@ -202,7 +201,7 @@ const EmailLogin = async ()=>{
   border-left: solid 4rpx #d5d6d8;
 .text_6 {
   margin-left: 9rpx;
-  color: #71a5de;
+  color: var(--xiaofan-bg-main-color);
   font-size: 29rpx;
 }
 }
@@ -219,7 +218,7 @@ const EmailLogin = async ()=>{
 }
 .text-wrapper_2 {
   padding: 0.9375rem 0 0.75rem;
-  background-color: #409EFE;
+  background-color: var(--xiaofan-bg-main-color);
   border-radius: 25px;
   width: 15.9375rem;
 }
@@ -229,7 +228,7 @@ const EmailLogin = async ()=>{
   color: #b7b7b7;
 }
 .text_9 {
-  color: #92c1f5;
+  color: var(--xiaofan-bg-main-color);
   line-height: 29rpx;
 }
 }
