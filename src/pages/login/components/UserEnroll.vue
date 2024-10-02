@@ -37,10 +37,6 @@
         <text class="font_2 text_8">注册登录</text>
       </view>
 
-      <view class="flex-col justify-start items-center button text-wrapper_3" style="background-color: #00df4c" @click="wxEnroll()">
-        <text class="font_2 text_8">微信公众号注册</text>
-      </view>
-
 
     </view>
   </view>
@@ -48,7 +44,7 @@
   <uni-popup ref="popup" type="center" background-color="#fff" :mask-click="false">
     <view class="WxLoginPopup">
       <img src="/static/images/qrcode_for_gh_994d57b6897e_430.jpg" style="width: 200px;height: 200px">
-      <h1>扫描关注<span>小帆购物</span>公众号</h1>
+      <h1>扫描关注<span>乐初购物</span>公众号</h1>
       <p>回复<b>注册</b>即可注册登录</p>
     </view>
   </uni-popup>
@@ -125,38 +121,6 @@ const enroll = async ()=>{
 
 const popup = ref(null); // 创建一个名为 "popup" 的 ref
 
-// 公众号注册
-const wxEnroll = async ()=> {
-  popup.value.open('center');
-  let isSend = false;
-  const res = await WxUserEnroll();
-  uni.setStorageSync('verifyCode',res.verifyCode)
-  // 获取到 verifyCode保存到本地
-  if(res.code === 200){
-    const userEnrollStatus = await WxUserLogin(res.verifyCode);
-    if(userEnrollStatus.code === 200){
-      // 开始轮询用户公众号注册结果
-      const verifyCode = uni.getStorageSync('verifyCode');
-      let intervalId;
-      // 校验用户是否完成注册
-      intervalId = setInterval(async ()=>{
-        const userIsOverEnrollStatus = await WxIsUserEnroll(verifyCode);
-        if(userIsOverEnrollStatus.code === 200){
-          clearInterval(intervalId);
-          uni.clearStorage('verifyCode');
-          userStore.setStatus(userIsOverEnrollStatus.data.token);
-          userInfoStore.setUserInfoManner(userIsOverEnrollStatus.data.userInfo);
-          popup.value.close();
-          uni.reLaunch({
-            url:'/pages/my/my'
-          })
-        }
-      },1500)
-
-    }
-  }
-}
-
 </script>
 
 <style lang="scss" scoped>
@@ -167,15 +131,13 @@ const wxEnroll = async ()=> {
   margin-top: 26rpx;
 }
 .page {
-  background-color: #409efe;
-  background-image: linear-gradient(135deg, #409efe 0%, #61aefc 100%);
+  background-color: var(--xiaofan-bg-main-color);
   width: 100%;
   overflow-y: auto;
   overflow-x: hidden;
   height: 100%;
   .section {
-    background-color: #409efe;
-    background-image: linear-gradient(135deg, #409efe 0%, #61aefc 100%);
+    background-color: var(--xiaofan-bg-main-color);
     width: 750rpx;
     height: 1450rpx;
   }
@@ -213,7 +175,7 @@ const wxEnroll = async ()=> {
       .group_2 {
         padding-bottom: 5rpx;
         .text_3 {
-          color: #67aaee;
+          color: var(--xiaofan-bg-main-color);
           line-height: 35rpx;
         }
         .text_4 {
@@ -223,7 +185,7 @@ const wxEnroll = async ()=> {
         }
       }
       .section_3 {
-        background-color: #0f71d499;
+        background-color: var(--xiaofan-bg-main-color);
         width: 69rpx;
         height: 3rpx;
       }
@@ -246,7 +208,7 @@ const wxEnroll = async ()=> {
           padding: 8rpx 0;
           border-left: solid 4rpx #d5d6d8;
           .text_6 {
-            color: #71a5de;
+            color: var(--xiaofan-bg-main-color);
             font-size: 29rpx;
           }
         }
@@ -287,7 +249,7 @@ const wxEnroll = async ()=> {
     }
     .text-wrapper_3 {
       padding: 0.9375rem 0 0.75rem;
-      background-color: #409EFE;
+      background-color: var(--xiaofan-bg-main-color);
       border-radius: 25px;
       width: 15.9375rem;
     }
